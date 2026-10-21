@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free Kenyan small-business tools: profit calculator and invoice generator in Kenyan shillings (KES).">
+<meta name="theme-color" content="#102a43">
+<title>KenyaQuickTools — Free Tools for Small Businesses</title>
+<style>
+:root{--navy:#102a43;--navy2:#183f5d;--teal:#087f8c;--mint:#d9f4ed;--ink:#172b3a;--muted:#637789;--line:#dce5eb;--paper:#fff;--bg:#f3f7f9;--gold:#f4b942;--radius:18px;--shadow:0 12px 35px rgba(16,42,67,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}button,input,textarea,select{font:inherit}button,a{touch-action:manipulation}a{color:var(--teal)}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{background:var(--navy);color:#fff}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:850;letter-spacing:-.4px;font-size:1.1rem}.logo{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--gold);color:var(--navy);font-weight:950}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{color:#dce9f1;text-decoration:none;font-size:.92rem}.navlinks a:hover,.navlinks a:focus{text-decoration:underline;color:#fff}.hero{background:linear-gradient(125deg,var(--navy),var(--navy2));color:#fff;padding:62px 0 58px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#b8f0df;background:#ffffff12;border:1px solid #ffffff24;border-radius:999px;padding:6px 12px;font-size:.82rem;font-weight:700}.hero h1{font-size:clamp(2.2rem,5vw,4.1rem);line-height:1.04;letter-spacing:-2px;margin:20px 0 16px}.hero p{font-size:1.08rem;color:#d7e5ed;max-width:620px;margin:0 0 24px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 17px;font-weight:750;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--gold);color:#172b3a}.btn-light{background:#fff;color:var(--navy)}.btn-outline{background:transparent;color:var(--navy);border:1px solid var(--line)}.hero .btn-outline{border-color:#ffffff55;color:#fff}.hero-card{background:#fff;color:var(--ink);border-radius:22px;padding:22px;box-shadow:0 24px 60px #0002;transform:rotate(1deg)}.mini-head{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.84rem}.mini-total{font-size:2.2rem;font-weight:900;letter-spacing:-1px;margin:12px 0 4px}.pill{display:inline-block;background:var(--mint);color:#096b62;border-radius:999px;padding:4px 9px;font-size:.78rem;font-weight:800}.mini-bars{display:grid;gap:9px;margin-top:20px}.mini-bar{height:9px;background:#e9eff3;border-radius:9px;overflow:hidden}.mini-bar span{display:block;height:100%;background:var(--teal);border-radius:9px}.section{padding:50px 0;scroll-margin-top:20px}.section-head{margin-bottom:24px}.section-head h2{font-size:clamp(1.65rem,3vw,2.35rem);letter-spacing:-.8px;margin:0 0 8px}.section-head p{margin:0;color:var(--muted);max-width:680px}.tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);min-width:0}.card-top{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}.iconbox{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:#e3f5f2;color:var(--teal);font-size:1.35rem;flex-shrink:0}.card h3{margin:0 0 4px;font-size:1.25rem;letter-spacing:-.3px}.card-top p{margin:0;color:var(--muted);font-size:.92rem}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.field.full{grid-column:1/-1}label{font-size:.88rem;font-weight:750;color:#334e60}input,textarea,select{width:100%;min-width:0;border:1px solid #ccd9e2;border-radius:10px;padding:11px 12px;background:#fff;color:var(--ink);outline:none}input:focus,textarea:focus,select:focus{border-color:var(--teal);box-shadow:0 0 0 3px #087f8c20}input[type=number]{font-variant-numeric:tabular-nums}.hint{font-size:.8rem;color:var(--muted)}.results{margin-top:20px;background:#f4f8fa;border:1px solid var(--line);border-radius:14px;padding:17px}.result-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid var(--line)}.result-row:last-child{border:0}.result-row span{color:var(--muted);font-size:.92rem}.result-row strong{font-variant-numeric:tabular-nums;text-align:right}.result-row.emphasis strong{font-size:1.28rem;color:var(--teal)}.status{font-size:.85rem;font-weight:700;margin-top:10px;color:var(--teal)}.line-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:20px 0 10px}.line-head h4{margin:0}.btn-small{padding:8px 11px;font-size:.85rem;border-radius:9px}.items{display:grid;gap:10px}.item-row{display:grid;grid-template-columns:minmax(0,1fr) 78px 118px 34px;gap:8px;align-items:end;background:#f7fafb;border:1px solid var(--line);border-radius:12px;padding:10px}.item-row .field{gap:4px}.item-row label{font-size:.75rem}.item-row input{padding:9px 8px;font-size:.9rem}.remove{height:39px;width:34px;border:1px solid #e6caca;background:#fff2f2;color:#a33232;border-radius:9px;cursor:pointer;font-weight:900}.invoice-preview{margin-top:20px;background:#fff;border:1px dashed #b9cbd6;border-radius:14px;padding:18px}.invoice-preview h4{margin:0;font-size:1.15rem}.invoice-preview .preview-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:12px}.preview-meta{font-size:.84rem;color:var(--muted)}.invoice-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.88rem}.invoice-table th,.invoice-table td{text-align:left;padding:8px 5px;border-bottom:1px solid var(--line)}.invoice-table th:last-child,.invoice-table td:last-child{text-align:right}.invoice-total{display:flex;justify-content:space-between;font-weight:900;font-size:1.2rem;padding-top:14px}.note{font-size:.82rem;color:var(--muted);margin-top:12px}.info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.info-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px}.info-card h3{margin:0 0 7px;font-size:1.05rem}.info-card p{margin:0;color:var(--muted);font-size:.92rem}.content-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px}.content-card h3{margin-top:0}.content-card p,.content-card li{color:#52697a}.footer{background:var(--navy);color:#d7e5ed;padding:28px 0;margin-top:30px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer p{margin:0;font-size:.88rem}.footer a{color:#fff}.tiny{font-size:.78rem;color:var(--muted)}.toast{min-height:1.3em;color:var(--teal);font-size:.86rem;font-weight:700;margin-top:8px}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.hero-card{max-width:420px;transform:none}.tool-grid{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr}.hero{padding:44px 0}.section{padding:38px 0}.nav{align-items:flex-start;flex-direction:column;gap:12px}.navlinks{gap:13px}.card{padding:19px}}
+@media(max-width:480px){.wrap{width:min(100% - 22px,1120px)}.hero h1{letter-spacing:-1.3px}.field-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.item-row{grid-template-columns:minmax(0,1fr) 65px 95px 32px;gap:5px;padding:7px}.item-row input{padding:8px 5px;font-size:.82rem}.item-row label{font-size:.69rem}.remove{width:32px}.card{padding:15px}.invoice-preview{padding:12px}.navlinks a{font-size:.85rem}}
+@media print{body{background:#fff;color:#000}.topbar,.hero,#home,#profit,#about,#contact,#privacy,.footer,.section-head,.card-top,.invoice-form,.invoice-actions,.no-print{display:none!important}body.print-invoice *{visibility:hidden}body.print-invoice #invoicePreview,body.print-invoice #invoicePreview *{visibility:visible}body.print-invoice #invoicePreview{display:block!important;position:absolute;left:0;top:0;width:100%;border:0;padding:0;margin:0;box-shadow:none}body.print-invoice .invoice-preview{border:0}body.print-invoice .invoice-table th,body.print-invoice .invoice-table td{color:#000;border-color:#ccc}body.print-invoice .preview-meta{color:#333}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="KenyaQuickTools home"><span class="logo">KQ</span><span>KenyaQuickTools</span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#profit">Profit calculator</a><a href="#invoice">Invoice maker</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">✦ Free tools for everyday business</span>
+      <h1>Work smarter.<br>Keep more of your KSh.</h1>
+      <p>Simple, practical tools for Kenyan freelancers and small businesses. Calculate profit, prepare invoices, and keep your work moving — right in your browser.</p>
+      <div class="actions"><a class="btn btn-primary" href="#invoice">Create an invoice <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#profit">Calculate profit</a></div>
+    </div>
+    <div class="hero-card" aria-label="Example business summary">
+      <div class="mini-head"><span>YOUR BUSINESS SNAPSHOT</span><span>•••</span></div>
+      <div class="mini-total">KSh 2,400</div><div class="pill">Illustrative profit</div>
+      <div class="mini-bars"><div><div class="mini-head"><span>Sales</span><strong>KSh 5,000</strong></div><div class="mini-bar"><span style="width:100%"></span></div></div><div><div class="mini-head"><span>Costs</span><strong>KSh 2,600</strong></div><div class="mini-bar"><span style="width:52%;background:#f4b942"></span></div></div></div>
+      <p class="tiny">Example figures only — try your own numbers below.</p>
+    </div>
+  </div>
+</section>
+<section class="section" aria-labelledby="tools-heading">
+  <div class="wrap">
+    <div class="section-head"><h2 id="tools-heading">Your free business toolkit</h2><p>No sign-up, no paid APIs, and no information sent to a server by these calculators. Enter your figures and get an answer instantly.</p></div>
+    <div class="info-grid">
+      <article class="info-card"><h3>📈 Profit calculator</h3><p>Check profit, profit margin and markup before you set your selling price.</p></article>
+      <article class="info-card"><h3>🧾 Invoice generator</h3><p>Prepare a clear invoice and use your browser’s print dialog to save it as a PDF.</p></article>
+      <article class="info-card"><h3>🇰🇪 Made for KSh</h3><p>Amounts are displayed in Kenyan shillings (KES) with simple, mobile-friendly forms.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="profit">
+  <div class="wrap">
+    <div class="section-head"><h2>Profit & margin calculator</h2><p>Enter your cost and selling price. The calculation updates as you type. Values are per item; for a batch, enter the total cost and total revenue instead.</p></div>
+    <div class="card">
+      <div class="card-top"><div class="iconbox">↗</div><div><h3>Know your numbers</h3><p>See the difference between profit margin and markup.</p></div></div>
+      <div class="field-grid">
+        <div class="field"><label for="cost">Cost price (KSh)</label><input id="cost" type="number" min="0" step="0.01" value="650" inputmode="decimal"></div>
+        <div class="field"><label for="selling">Selling price (KSh)</label><input id="selling" type="number" min="0" step="0.01" value="1000" inputmode="decimal"></div>
+        <div class="field"><label for="quantity">Number of items</label><input id="quantity" type="number" min="0" step="1" value="1" inputmode="numeric"></div>
+        <div class="field"><label for="extra">Other total costs (KSh)</label><input id="extra" type="number" min="0" step="0.01" value="0" inputmode="decimal"><span class="hint">For delivery, packaging, fees, etc.</span></div>
+      </div>
+      <div class="results" aria-live="polite">
+        <div class="result-row"><span>Total sales</span><strong id="salesOut">KSh 1,000.00</strong></div>
+        <div class="result-row"><span>Total costs</span><strong id="costOut">KSh 650.00</strong></div>
+        <div class="result-row emphasis"><span>Net profit / loss</span><strong id="profitOut">KSh 350.00</strong></div>
+        <div class="result-row"><span>Profit margin</span><strong id="marginOut">35.00%</strong></div>
+        <div class="result-row"><span>Markup on item cost</span><strong id="markupOut">53.85%</strong></div>
+        <div id="profitStatus" class="status">You are making a profit on these figures.</div>
+      </div>
+      <p class="note">This is a basic estimate, not tax, accounting, or financial advice. Include all relevant costs for a more realistic result.</p>
+    </div>
+  </div>
+</section>
+<section class="section" id="invoice">
+  <div class="wrap">
+    <div class="section-head"><h2>Invoice generator</h2><p>Fill in your details, add or remove items, then print or save the finished invoice as a PDF. Everything runs locally in this browser.</p></div>
+    <div class="card">
+      <div class="card-top"><div class="iconbox">▤</div><div><h3>Build an invoice</h3><p>Complete the fields below. Only information you enter is used.</p></div></div>
+      <div class="invoice-form">
+        <div class="field-grid">
+          <div class="field"><label for="businessName">Your business / name</label><input id="businessName" placeholder="e.g. Amani Designs" autocomplete="organization"></div>
+          <div class="field"><label for="businessContact">Your contact (optional)</label><input id="businessContact" placeholder="Phone or email" autocomplete="email"></div>
+          <div class="field"><label for="clientName">Bill to / customer</label><input id="clientName" placeholder="Customer name"></div>
+          <div class="field"><label for="clientContact">Customer contact (optional)</label><input id="clientContact" placeholder="Phone or email"></div>
+          <div class="field"><label for="invoiceNumber">Invoice number</label><input id="invoiceNumber" value="KQT-001"></div>
+          <div class="field"><label for="invoiceDate">Invoice date</label><input id="invoiceDate" type="date"></div>
+          <div class="field"><label for="dueDate">Due date (optional)</label><input id="dueDate" type="date"></div>
+          <div class="field"><label for="paymentDetails">Payment details (optional)</label><input id="paymentDetails" placeholder="e.g. M-Pesa till / bank details"></div>
+          <div class="field full"><label for="invoiceNotes">Notes (optional)</label><textarea id="invoiceNotes" rows="2" placeholder="Thank you for your business."></textarea></div>
+        </div>
+        <div class="line-head"><h4>Items or services</h4><button class="btn btn-outline btn-small" id="addItem" type="button">＋ Add item</button></div>
+        <div class="items" id="items">
+          <div class="item-row">
+            <div class="field"><label>Description</label><input class="item-desc" value="Design service" aria-label="Item description"></div>
+            <div class="field"><label>Qty</label><input class="item-qty" type="number" min="0" step="1" value="1" aria-label="Item quantity"></div>
+            <div class="field"><label>Unit price (KSh)</label><input class="item-price" type="number" min="0" step="0.01" value="2500" aria-label="Item unit price"></div>
+            <button class="remove" type="button" aria-label="Remove item" title="Remove item">×</button>
+          </div>
+        </div>
+        <div class="field-grid" style="margin-top:16px">
+          <div class="field"><label for="discount">Discount (KSh)</label><input id="discount" type="number" min="0" step="0.01" value="0"></div>
+          <div class="field"><label for="taxRate">Tax rate (%) — if applicable</label><input id="taxRate" type="number" min="0" max="100" step="0.01" value="0"><span class="hint">Use only the rate applicable to your situation.</span></div>
+        </div>
+        <div class="invoice-actions actions" style="margin-top:18px"><button class="btn btn-primary" type="button" id="printInvoice">Print / Save PDF</button><button class="btn btn-outline" type="button" id="resetInvoice">Reset form</button></div>
+        <div class="toast" id="invoiceMessage" aria-live="polite"></div>
+      </div>
+      <div class="invoice-preview" id="invoicePreview" aria-label="Invoice preview">
+        <div class="preview-top">
+          <div><h4 id="previewBusiness">Your Business</h4><div class="preview-meta" id="previewBusinessContact"></div></div>
+          <div style="text-align:right"><h4>INVOICE</h4><div class="preview-meta" id="previewNumber">KQT-001</div><div class="preview-meta" id="previewDate"></div><div class="preview-meta" id="previewDue"></div></div>
+        </div>
+        <div class="preview-meta">BILL TO</div><strong id="previewClient">Customer name</strong><div class="preview-meta" id="previewClientContact"></div>
+        <table class="invoice-table"><thead><tr><th>Description</th><th>Qty</th><th>Unit price</th><th>Total</th></tr></thead><tbody id="previewItems"><tr><td>Design service</td><td>1</td><td>KSh 2,500.00</td><td>KSh 2,500.00</td></tr></tbody></table>
+        <div style="max-width:320px;margin-left:auto;margin-top:10px">
+          <div class="result-row"><span>Subtotal</span><strong id="previewSubtotal">KSh 2,500.00</strong></div>
+          <div class="result-row"><span>Discount</span><strong id="previewDiscount">KSh 0.00</strong></div>
+          <div class="result-row"><span>Tax</span><strong id="previewTax">KSh 0.00</strong></div>
+          <div class="invoice-total"><span>Total due</span><span id="previewTotal">KSh 2,500.00</span></div>
+        </div>
+        <div style="margin-top:20px"><div class="preview-meta">PAYMENT DETAILS</div><div id="previewPayment">—</div></div>
+        <div style="margin-top:12px"><div class="preview-meta">NOTES</div><div id="previewNotes">Thank you for your business.</div></div>
+        <p class="tiny">Generated with KenyaQuickTools. Please check all details before sending.</p>
+      </div>
+      <p class="note">The invoice is a general template, not a substitute for any tax invoice or eTIMS requirements that may apply to your business. Check current KRA guidance if you need a compliant tax invoice.</p>
+    </div>
+  </div>
+</section>
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head"><h2>About KenyaQuickTools</h2><p>Practical, lightweight tools for people building something of their own.</p></div>
+    <div class="content-card"><h3>Simple tools, made to get the job done</h3><p>KenyaQuickTools is a small independent project concept for Kenyan freelancers, creators and small businesses. The first tools help you estimate profit and prepare a basic invoice using Kenyan shillings.</p><p>The calculations run in your browser and this starter website does not connect to a database, payment service, analytics provider or advertising network. Results are estimates: check your figures and applicable business requirements before relying on them.</p></div>
+  </div>
+</section>
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head"><h2>Contact</h2><p>Have a suggestion or found a problem? Add your real contact details before publishing.</p></div>
+    <div class="content-card"><h3>Get in touch</h3><p>This starter version does not have a backend contact form, so messages cannot be sent from this page automatically.</p><p>Replace this section with your public business email or a link to a contact method you actively monitor. Do not publish private personal details.</p><p><strong>Contact:</strong> <span class="preview-meta">Add your business email or contact link here before launch.</span></p></div>
+  </div>
+</section>
+<section class="section" id="privacy">
+  <div class="wrap">
+    <div class="section-head"><h2>Privacy notice</h2><p>A clear starting point for a static website. Update this notice if you add third-party services.</p></div>
+    <div class="content-card">
+      <h3>What this starter website does</h3>
+      <p>The profit calculator and invoice generator process the information you enter locally in your web browser. This starter version does not send those entries to a server or store them after you close or refresh the page. Avoid entering information you do not want displayed on your screen or printed.</p>
+      <h3>Hosting and third-party services</h3>
+      <p>If hosted on GitHub Pages, GitHub may process technical information such as described in its own policies. This starter version does not include analytics, cookies for tracking, payment integrations or ads.</p>
+      <h3>Advertising and future changes</h3>
+      <p>If advertising, analytics, contact forms or other third-party services are added later, update this notice to explain what information those services collect, how it is used, and how visitors can manage relevant settings. Do not claim that no data is collected by hosting providers.</p>
+      <h3>Contact</h3><p>Provide a monitored business contact here before publishing a final production privacy notice.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="logo">KQ</span><span>KenyaQuickTools</span></a><p>Free tools for Kenyan small businesses · Amounts in KSh (KES)</p><p>© <span id="year"></span> KenyaQuickTools</p></div></footer>
+<script>
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const num = el => {
+    const n = Number(el.value);
+    return Number.isFinite(n) && n > 0 ? n : 0;
+  };
+  const kes = value => "KSh " + (Number.isFinite(value) ? value : 0).toLocaleString("en-KE",{minimumFractionDigits:2,maximumFractionDigits:2});
+  const esc = value => String(value).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+  $("year").textContent = new Date().getFullYear();
+
+  // Profit calculator
+  function updateProfit(){
+    const unitCost = num($("cost"));
+    const selling = num($("selling"));
+    const qty = num($("quantity"));
+    const extra = num($("extra"));
+    const sales = selling * qty;
+    const costs = unitCost * qty + extra;
+    const profit = sales - costs;
+    const margin = sales > 0 ? profit / sales * 100 : null;
+    const markupBase = unitCost * qty;
+    const markup = markupBase > 0 ? (profit + extra) / markupBase * 100 : null;
+    $("salesOut").textContent = kes(sales);
+    $("costOut").textContent = kes(costs);
+    $("profitOut").textContent = kes(profit);
+    $("marginOut").textContent = margin === null ? "—" : margin.toFixed(2) + "%";
+    $("markupOut").textContent = markup === null ? "—" : markup.toFixed(2) + "%";
+    $("profitStatus").textContent = sales === 0 && costs === 0 ? "Enter your figures to calculate an estimate." : profit > 0 ? "You are making a profit on these figures." : profit < 0 ? "These figures show a loss. Review your costs and selling price." : "These figures break even before any unentered costs.";
+    $("profitOut").style.color = profit < 0 ? "#a33232" : "var(--teal)";
+  }
+  ["cost","selling","quantity","extra"].forEach(id => $(id).addEventListener("input",updateProfit));
+  // Fix numeric helper use explicitly for cost and quantities.
+  updateProfit();
+
+  // Invoice generator
+  const items = $("items");
+  function itemTemplate(desc="",qty="1",price="0"){
+    const row = document.createElement("div");
+    row.className = "item-row";
+    row.innerHTML = `<div class="field"><label>Description</label><input class="item-desc" aria-label="Item description" value="${esc(desc)}" placeholder="Product or service"></div>
+      <div class="field"><label>Qty</label><input class="item-qty" aria-label="Item quantity" type="number" min="0" step="1" value="${esc(qty)}"></div>
+      <div class="field"><label>Unit price (KSh)</label><input class="item-price" aria-label="Item unit price" type="number" min="0" step="0.01" value="${esc(price)}"></div>
+      <button class="remove" type="button" aria-label="Remove item" title="Remove item">×</button>`;
+    row.querySelectorAll("input").forEach(input => input.addEventListener("input",updateInvoice));
+    row.querySelector(".remove").addEventListener("click",() => {
+      if(items.children.length <= 1){ $("invoiceMessage").textContent = "Keep at least one item row. You can clear its values if needed."; return; }
+      row.remove(); updateInvoice();
+    });
+    return row;
+  }
+  // Bind initial row
+  items.querySelectorAll("input").forEach(input => input.addEventListener("input",updateInvoice));
+  items.querySelector(".remove").addEventListener("click",() => {
+    if(items.children.length <= 1){ $("invoiceMessage").textContent = "Keep at least one item row. You can clear its values if needed."; return; }
+    items.firstElementChild.remove(); updateInvoice();
+  });
+  $("addItem").addEventListener("click",() => {
+    if(items.children.length >= 30){ $("invoiceMessage").textContent = "Maximum of 30 items per invoice."; return; }
+    items.appendChild(itemTemplate()); updateInvoice();
+  });
+  const watched = ["businessName","businessContact","clientName","clientContact","invoiceNumber","invoiceDate","dueDate","paymentDetails","invoiceNotes","discount","taxRate"];
+  watched.forEach(id => $(id).addEventListener("input",updateInvoice));
+  watched.forEach(id => $(id).addEventListener("change",updateInvoice));
+  function getItemRows(){
+    return [...items.querySelectorAll(".item-row")].map(row => ({
+      desc: row.querySelector(".item-desc").value.trim(),
+      qty: Math.max(0,Number(row.querySelector(".item-qty").value)||0),
+      price: Math.max(0,Number(row.querySelector(".item-price").value)||0)
+    }));
+  }
+  function updateInvoice(){
+    const rows = getItemRows();
+    const subtotal = rows.reduce((sum,item)=>sum+item.qty*item.price,0);
+    const discount = Math.min(subtotal,num($("discount")));
+    const taxRate = Math.min(100,num($("taxRate")));
+    const tax = (subtotal-discount)*taxRate/100;
+    const total = subtotal-discount+tax;
+    $("previewBusiness").textContent = $("businessName").value.trim() || "Your Business";
+    $("previewBusinessContact").textContent = $("businessContact").value.trim();
+    $("previewNumber").textContent = "Invoice: " + ($("invoiceNumber").value.trim() || "—");
+    $("previewDate").textContent = $("invoiceDate").value ? "Date: " + $("invoiceDate").value : "";
+    $("previewDue").textContent = $("dueDate").value ? "Due: " + $("dueDate").value : "";
+    $("previewClient").textContent = $("clientName").value.trim() || "Customer name";
+    $("previewClientContact").textContent = $("clientContact").value.trim();
+    $("previewItems").innerHTML = rows.map(item => `<tr><td>${esc(item.desc || "Item / service")}</td><td>${item.qty.toLocaleString("en-KE",{maximumFractionDigits:2})}</td><td>${kes(item.price)}</td><td>${kes(item.qty*item.price)}</td></tr>`).join("");
+    $("previewSubtotal").textContent = kes(subtotal);
+    $("previewDiscount").textContent = "− " + kes(discount);
+    $("previewTax").textContent = kes(tax) + (taxRate ? ` (${taxRate.toFixed(2)}%)` : "");
+    $("previewTotal").textContent = kes(total);
+    $("previewPayment").textContent = $("paymentDetails").value.trim() || "—";
+    $("previewNotes").textContent = $("invoiceNotes").value.trim() || "—";
+    $("invoiceMessage").textContent = "";
+  }
+  $("printInvoice").addEventListener("click",() => {
+    updateInvoice();
+    $("invoiceMessage").textContent = "In the print window, choose “Save as PDF” to save a copy.";
+    document.body.classList.add("print-invoice");
+    window.print();
+  });
+  window.addEventListener("afterprint",()=>document.body.classList.remove("print-invoice"));
+  $("resetInvoice").addEventListener("click",() => {
+    if(!window.confirm("Reset all invoice fields and items?")) return;
+    ["businessName","businessContact","clientName","clientContact","paymentDetails","invoiceNotes"].forEach(id=>$(id).value="");
+    $("invoiceNumber").value="KQT-001";
+    $("invoiceDate").value=new Date().toISOString().slice(0,10);
+    $("dueDate").value="";
+    $("discount").value="0";$("taxRate").value="0";
+    items.innerHTML="";items.appendChild(itemTemplate("Design service","1","2500"));
+    updateInvoice();
+    $("invoiceMessage").textContent="Invoice form reset.";
+  });
+  const today = new Date();
+  $("invoiceDate").value = new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  updateInvoice();
+})();
+</script>
+</body>
+</html>
